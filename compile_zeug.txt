@@ -1,0 +1,5 @@
+gfortran -c module_matrix.f95 module_transform.f95 module_function.f95 module_optimize.f95 module_algorithm.f95 module_initialize.f95 module_output.f95 module_tools.f95
+
+gfortran test_algorithm.f95 module_matrix.o module_transform.o module_function.o module_optimize.o module_algorithm.o module_initialize.o module_output.o module_tools.o -o test_algorithm.out
+
+gfortran test_algorithm_new.f95 module_matrix.o module_transform.o module_function.o module_optimize.o module_algorithm.o module_initialize.o module_output.o module_tools.o -o test_algorithm_new.out
